@@ -140,7 +140,7 @@ Draw
 --------------------*/
 function draw() {
     time++
-    background(28, 28, 28)
+  background(40, 42, 54, 255)
 
     for (let p of Particles) {
         p.update()

@@ -7,11 +7,17 @@
   src: url("fonts/Product Sans Bold.ttf") format("truetype");
 }
 
+:root {
+  --foreground-color: #f8f8f2;
+  --background-color: #282a36;
+  --font: "Product Sans1", sans-serif;
+}
+
 body {
-  font-family: "Product Sans1", sans-serif;
-  background: #1c1c1c;
-  color: white;
-  font-size: 20px;
+  font-family: var(--font);
+  background: var(--background-color);
+  color: var(--foreground-color);
+  font-size: 1.5em;
 }
 
 a,
@@ -20,67 +26,68 @@ a:focus,
 a:active,
 a:visited {
   text-decoration: none;
-  color: #fff;
+  color: var(--foreground-color);
 }
 
 h1.hello {
-  margin-top: 270px;
+  margin-top: 7em;
 }
 
 h1.hello,
 h1.timing {
-  margin-bottom: 85px;
+  margin-bottom: 4em;
   font-size: 3.2rem;
 }
 
 input {
   border: none;
-  border-bottom: 2px solid #fff;
-  min-width: 750px;
-  max-width: 900px;
+  border-bottom: 0.15em solid var(--foreground-color);
+  min-width: 20em;
+  max-width: 40em;
   width: 75%;
-  padding-bottom: 10px;
+  padding-bottom: 1em;
   background-color: transparent;
-  color: #fff;
+  color: var(--foreground-color);
   outline: 0;
-  margin-bottom: 20px;
+  margin-bottom: 1.5em;
+  margin-top: 2em;
 }
 
 .icons img {
   position: relative;
-  height: 20px;
+  height: 2em;
   width: auto;
-  top: -2px;
+  top: -0.5em;
 }
 .icons a:not(:last-of-type) {
-  margin-right: 20px;
+  margin-right: 2em;
   padding: 0;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #fff;
+  color: var(--foreground-color);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #fff;
+  color: var(--foreground-color);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #fff;
+  color: var(--foreground-color);
 }
 
 a {
-  padding-bottom: 2px !important;
-  border-bottom: 1px solid transparent;
+  padding-bottom: 0.3em !important;
+  border-bottom: 0.05em solid transparent;
 }
 
 a:hover {
-  border-bottom: 1px solid white;
-  transition: all 0.3s ease !important;
+  border-bottom: 0.1em solid var(--foreground-color);
+  transition: all 0.1s ease !important;
 }
 
 canvas {
