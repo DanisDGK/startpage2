@@ -45,7 +45,7 @@ input {
   min-width: 20em;
   max-width: 40em;
   width: 75%;
-  padding-bottom: 1em;
+  padding-bottom: 0.1em;
   background-color: transparent;
   color: var(--foreground-color);
   outline: 0;
